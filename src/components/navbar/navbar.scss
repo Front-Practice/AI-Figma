@@ -1,0 +1,78 @@
+$primary-bg: #0d1a2d;
+$primary-blue: #4b89dc;
+$text-color: #ffffff;
+$border-color: #1a2c47;
+$font-size-base: 1.2rem;
+$font-size-logo: 1.5rem;
+$font-size-btn: 1rem;
+
+.navbar {
+  background-color: $primary-bg;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-base;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid $border-color;
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+  }
+
+  .navbar-logo {
+    color: $text-color;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: $font-size-logo;
+    display: flex;
+    align-items: center;
+
+    .logo-icon {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+  }
+
+  .nav-links {
+    color: $text-color;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      color: $primary-blue;
+    }
+  }
+
+  .sign-in-btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    background-color: $primary-blue;
+    color: $text-color;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-size: $font-size-btn;
+
+    &:hover {
+      background-color: $text-color;
+      color: #242424;
+    }
+  }
+}
